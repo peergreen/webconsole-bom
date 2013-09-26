@@ -3,6 +3,11 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>com.peergreen</groupId>
+    <artifactId>peergreen-pom</artifactId>
+    <version>3.1</version>
+  </parent>
 
   <groupId>com.peergreen.webconsole</groupId>
   <artifactId>web-console-bom</artifactId>
@@ -61,27 +66,5 @@
       </dependency>
     </dependencies>
   </dependencyManagement>
-
-  <!-- Repositories -->
-  <repositories>
-
-    <repository>
-      <id>peergreen-release</id>
-      <name>Peergreen Release Repository</name>
-      <url>https://forge.peergreen.com/nexus/content/repositories/releases</url>
-      <snapshots>
-        <enabled>false</enabled>
-      </snapshots>
-    </repository>
-    <repository>
-      <id>peergreen-snapshot</id>
-      <name>Peergreen Snapshot Repository</name>
-      <url>https://forge.peergreen.com/nexus/content/repositories/snapshots</url>
-      <releases>
-        <enabled>false</enabled>
-      </releases>
-    </repository>
-
-  </repositories>
     
 </project>
